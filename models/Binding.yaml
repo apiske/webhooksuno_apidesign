@@ -4,3 +4,5 @@ x-internal: false
 properties:
   binding_id:
     type: string
+x-tags:
+  - webhook-receiver
