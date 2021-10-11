@@ -1,0 +1,18 @@
+title: Topic
+type: object
+x-tags:
+  - webhook-sender
+  - webhook-receiver
+properties:
+  id:
+    type: string
+  name:
+    type: string
+    description: The name must be unique within a workspace
+  public_description:
+    type: string
+  webhook_definition:
+    type: string
+required:
+  - id
+  - name

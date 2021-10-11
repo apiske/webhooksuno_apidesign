@@ -1,0 +1,32 @@
+title: Subscription
+type: object
+x-tags:
+  - webhook-receiver
+properties:
+  id:
+    type: string
+  name:
+    type: string
+    description: The name must be unique within a workspace
+  destination_url:
+    type: string
+    format: uri
+  topics:
+    type: array
+    items:
+      type: string
+  state:
+    type: string
+    enum:
+      - unverified
+      - active
+      - disabled
+      - error
+  key:
+    type: string
+required:
+  - id
+  - name
+  - destination_url
+  - state
+  - key

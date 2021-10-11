@@ -1,0 +1,14 @@
+title: Tag
+type: object
+x-tags:
+  - webhook-sender
+description: ''
+properties:
+  id:
+    type: string
+  name:
+    type: string
+    description: The name must be unique within a workspace
+required:
+  - id
+  - name

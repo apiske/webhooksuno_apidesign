@@ -1,0 +1,21 @@
+title: BindingRequest
+type: object
+description: ''
+x-tags:
+  - webhook-sender
+x-examples: {}
+properties:
+  id:
+    type: string
+  name:
+    type: string
+    description: The name must be unique within a workspace
+  router:
+    type: string
+  message:
+    type: string
+    description: A message to be displayed to the user (at the receiving end) that is activating this BindingRequest.
+required:
+  - id
+  - name
+  - router

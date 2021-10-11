@@ -1,0 +1,22 @@
+title: WebhookDefinition
+type: object
+x-tags:
+  - webhook-sender
+properties:
+  id:
+    type: string
+  name:
+    type: string
+    description: The name must be unique within a workspace
+  description:
+    type: string
+  retry_wait_factor:
+    type: integer
+    minimum: 10
+    maximum: 200
+  retry_max_retries:
+    type: integer
+    minimum: 0
+required:
+  - id
+  - name

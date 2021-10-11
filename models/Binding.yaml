@@ -1,0 +1,6 @@
+title: Binding
+type: object
+x-internal: false
+properties:
+  binding_id:
+    type: string
